@@ -6,7 +6,7 @@ import 'package:bookly/core/utils/api_services.dart';
 import 'package:hive/hive.dart';
 
 abstract class HomeRemoteDataSource {
-  Future<List<BookEntity>> feachFeaturedBook();
+  Future<List<BookEntity>> feachFeaturedBook({int pageNumber = 0});
   Future<List<BookEntity>> feachNewsedBook();
 }
 

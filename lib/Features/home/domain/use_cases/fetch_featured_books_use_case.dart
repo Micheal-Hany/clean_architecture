@@ -10,7 +10,7 @@ class FetchFeaturedBookUseCase extends UseCase<List<BookEntity>, int> {
   FetchFeaturedBookUseCase(this.homeRepo);
 
   @override
-  Future<Either<Faluire, List<BookEntity>>> call([int pageNumber = 0]) async {
-    return await homeRepo.feachFeaturedBook(pageNumber);
+  Future<Either<Faluire, List<BookEntity>>> call([int noPramters = 0]) async {
+    return await homeRepo.feachFeaturedBook(pageNumber: noPramters);
   }
 }
